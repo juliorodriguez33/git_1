@@ -1,3 +1,4 @@
-hola soy julio rodriguez
+hola mi nombre es Julio Rodriguez
+soy de Ecuador
 me gusta la programacion
-tengo muchas ganas de aprender 
+tengo muchas ganas de aprender
