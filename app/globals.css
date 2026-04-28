@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
+  --background: 220 40% 98%;
   --foreground: 222.2 84% 4.9%;
   --card: 0 0% 100%;
   --card-foreground: 222.2 84% 4.9%;
-  --border: 214.3 31.8% 91.4%;
+  --border: 214.3 31.8% 88%;
   --input: 214.3 31.8% 91.4%;
   --ring: 221.2 83.2% 53.3%;
 }
 
 body {
-  @apply bg-slate-100 text-slate-900 antialiased;
+  @apply min-h-screen bg-slate-100 text-slate-900 antialiased;
+  background-image: radial-gradient(circle at top left, #e0e7ff 0%, rgba(224, 231, 255, 0) 42%),
+    radial-gradient(circle at top right, #cffafe 0%, rgba(207, 250, 254, 0) 40%);
 }

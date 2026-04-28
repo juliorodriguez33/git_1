@@ -35,9 +35,8 @@ export async function registerAction(formData: FormData) {
 
   if (error) throw new Error(error.message);
 
-  if (data.user) {
-    await supabase.from("profiles").upsert({ id: data.user.id, full_name: parsed.fullName });
-  }
+  // El perfil se crea automáticamente vía trigger SQL (ver migración 0004).
+  if (!data.user) throw new Error("No se pudo completar el registro de usuario");
 
   redirect("/dashboard");
 }
